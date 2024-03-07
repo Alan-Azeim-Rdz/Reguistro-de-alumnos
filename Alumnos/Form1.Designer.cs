@@ -40,10 +40,10 @@
             TextResult = new Label();
             TxtMatricula = new TextBox();
             TxtCarrera = new TextBox();
-            TxtPromedio = new TextBox();
             label4 = new Label();
             label5 = new Label();
             label6 = new Label();
+            domainUpDown1 = new DomainUpDown();
             SuspendLayout();
             // 
             // label1
@@ -144,13 +144,6 @@
             TxtCarrera.Size = new Size(125, 27);
             TxtCarrera.TabIndex = 11;
             // 
-            // TxtPromedio
-            // 
-            TxtPromedio.Location = new Point(388, 255);
-            TxtPromedio.Name = "TxtPromedio";
-            TxtPromedio.Size = new Size(125, 27);
-            TxtPromedio.TabIndex = 12;
-            // 
             // label4
             // 
             label4.AutoSize = true;
@@ -178,15 +171,23 @@
             label6.TabIndex = 15;
             label6.Text = "Promedio";
             // 
+            // domainUpDown1
+            // 
+            domainUpDown1.Location = new Point(388, 256);
+            domainUpDown1.Name = "domainUpDown1";
+            domainUpDown1.Size = new Size(151, 27);
+            domainUpDown1.TabIndex = 16;
+            domainUpDown1.Text = "domainUpDown1";
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(domainUpDown1);
             Controls.Add(label6);
             Controls.Add(label5);
             Controls.Add(label4);
-            Controls.Add(TxtPromedio);
             Controls.Add(TxtCarrera);
             Controls.Add(TxtMatricula);
             Controls.Add(TextResult);
@@ -219,9 +220,9 @@
         private Label TextResult;
         private TextBox TxtMatricula;
         private TextBox TxtCarrera;
-        private TextBox TxtPromedio;
         private Label label4;
         private Label label5;
         private Label label6;
+        private DomainUpDown domainUpDown1;
     }
 }

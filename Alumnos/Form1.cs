@@ -20,7 +20,7 @@ namespace Alumnos
             string FechaDeNacieminto = (TimeDateFechaNacimiento).Text;
             string matricuala = (TxtMatricula).Text;
             string carrera = (TxtCarrera).Text;
-            double promedio = double.Parse(TxtPromedio.Text);
+            double promedio = double.Parse(domainUpDown1.Text);
 
             Estudiante Student = new Estudiante( Nombre, ApellidoPaterno, ApellidoMaterno, FechaDeNacieminto,matricuala, carrera, promedio);
 
