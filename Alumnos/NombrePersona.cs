@@ -8,44 +8,44 @@ namespace Alumnos
 {
     internal class NombrePersona
     {
-        protected string Nombre;
-        protected string ApellidoPaterno;
-        protected string ApellidoMaterno;
+        protected string FirstName;
+        protected string LastNameFather;
+        protected string LastNameMother;
 
-        public string nombre
+        public string firstname
         {
-            get { return Nombre; }
-            set {Nombre = value; }
+            get { return FirstName; }
+            set { FirstName = value; }
         }
-        public string Apellidopaterno
+        public string lastnamefather
         {
-            get { return ApellidoPaterno; }
-            set { ApellidoPaterno = value; }
+            get { return LastNameFather; }
+            set { LastNameFather = value; }
         }
-        public string Apellidomaterno
+        public string lastnamemother
         {
-            get { return ApellidoMaterno; }
-            set { ApellidoMaterno = value; }
+            get { return LastNameMother; }
+            set { LastNameMother = value; }
         }
 
         //constructors
         public NombrePersona()
         {
-            nombre = "";
-            Apellidopaterno = "";
-            Apellidomaterno = "";
+            firstname = "";
+            lastnamefather = "";
+            LastNameMother = "";
         }
-        public NombrePersona(string nombre, string apellidopaterno, string apellidomaterno)
+        public NombrePersona(string name, string namefather, string namemother)
         {
-            this.nombre = nombre;
-            this.Apellidomaterno = apellidomaterno;
-            this.Apellidopaterno = apellidopaterno;
+            this.firstname = name;
+            this.lastnamemother = namemother;
+            this.lastnamefather = namefather;
         }
 
         //Methods
         public override string ToString()
         {
-            return  nombre + " " + Apellidopaterno + " " + Apellidomaterno;
+            return firstname + " " + lastnamefather + " " + lastnamemother;
         }
 
 

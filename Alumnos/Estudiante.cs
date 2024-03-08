@@ -9,46 +9,46 @@ namespace Alumnos
 {
     internal class Estudiante: Persona
     {
-        protected string Matricula;
-        protected string Carrera;
-        protected double Promedio;
-        public string matricula
+        protected string ID;
+        protected string Career;
+        protected double Average;
+        public string id
         {
-            get { return Matricula; }
-            set { Matricula = value; }
+            get { return ID; }
+            set { ID = value; }
         }
-        public string carrera
+        public string carrer
         {
-            get { return Carrera; }
-            set { Carrera = value; }
+            get { return Career; }
+            set { Career = value; }
         }
-        public double promedio
+        public double average
         {
-            get { return Promedio; }
-            set { Promedio = value; }
+            get { return Average; }
+            set { Average = value; }
         }
 
         //constructor
 
         public Estudiante() : base()
         {
-            matricula = "";
-            carrera = "";
-            promedio = 0;
+            id = "";
+            carrer = "";
+            average = 0;
 
         }
 
-        public Estudiante(string Nombre, string ApellidoPaterno, string ApellidoMaterno, string FechaNacimiento, string Matricula1, string Carrera1, double Promedio1) : base(Nombre, ApellidoPaterno, ApellidoMaterno, FechaNacimiento)
+        public Estudiante(string name, string namefather, string namemother, string dateofbirth, string ID1, string Career1, double Average1) : base(name, namefather, namemother, dateofbirth)
         {
-            this.matricula = Matricula1 ;
-            this.carrera = Carrera1 ;
-            this.promedio = Promedio1 ;
+            this.id = ID1 ;
+            this.carrer = Career1;
+            this.average = Average1;
         }
 
         //Methods
         public override string ToString()
         {
-            return base.ToString() + "\n Matricula: " + matricula + "\n Carrera: " + carrera + "\n Promedio: " + promedio;
+            return base.ToString() + "\n Id: " + id + "\n Carrera: " + carrer + "\n Promedio: " + average;
         }
 
 

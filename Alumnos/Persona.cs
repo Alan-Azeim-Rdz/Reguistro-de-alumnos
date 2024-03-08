@@ -11,30 +11,30 @@ namespace Alumnos
 {
     internal class Persona : NombrePersona
     {
-        protected string FechaDeNacimiento;
+        protected string DateOfbirth;
 
-        public string fechadenacimiento
+        public string dateofbirth
         {
-            get { return FechaDeNacimiento; }
-            set { FechaDeNacimiento = value; }
+            get { return DateOfbirth; }
+            set { DateOfbirth = value; }
         }
 
         //constructor
 
         public Persona() : base()
         {
-            fechadenacimiento = "";
+            dateofbirth = "";
         }
 
-        public Persona(string Nombre, string ApellidoPaterno, string ApellidoMaterno, string FechaNacimiento) : base(Nombre,ApellidoPaterno,ApellidoMaterno) 
+        public Persona(string name, string namefather, string namemother, string datebirth) : base(name, namefather, namemother) 
         {
-            this.fechadenacimiento = FechaNacimiento ;
+            this.dateofbirth = datebirth;
         }
 
         //Methods
         public override string ToString()
         {
-            return base.ToString() + "\n" + fechadenacimiento;
+            return base.ToString() + "\n" + dateofbirth;
         }
 
     }
